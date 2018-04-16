@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  nginx:
+    image: nginx
+    container_name: "laravel-nginx"
+    ports:
+      - "80:80"
+  php:
+    build: ./php
+    container_name: "laravel-php"
